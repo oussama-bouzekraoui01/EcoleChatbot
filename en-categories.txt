@@ -1,0 +1,5 @@
+unknown     aaaaaaaaaa
+greeting     hi .  hello how are you? . hey . hows it going . good morning . good evening . good afternoon
+costs     what are the costs ?. costs ? . how many do we paid ?
+department    what are the departments ? . department ? . how many department does exist ?
+registration       what are the registration procedures ? . registration ?

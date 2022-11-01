@@ -1,0 +1,4 @@
+unknown	    aaaaaaaaaaa      
+greeting	bonjour bonsoir salut
+frais     quelles sont les frais de scolarité ? .  les frais ?  . quelles sont les frais ?
+filière    quelles sont les filières ? . les filières ?
