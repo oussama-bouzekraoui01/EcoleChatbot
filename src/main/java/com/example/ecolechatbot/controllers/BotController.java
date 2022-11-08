@@ -44,7 +44,7 @@ public class BotController {
         response.setMessage("");
 
         if(langue.getLangue().equals("English")) {
-            DoccatModel model = englishService.trainCategorizerModel();
+            DoccatModel model = englishService.trainCategorizerModelEn();
             String[] sentences = englishService.decomposerPhrases(input);
             for (String sentence : sentences) {
                 String[] tokens = englishService.decomposeMot(sentence);
@@ -57,7 +57,7 @@ public class BotController {
         }
 
         if(langue.getLangue().equals("French")) {
-            DoccatModel model = frenchService.trainCategorizerModel();
+            DoccatModel model = frenchService.trainCategorizerModelFr();
             String[] sentences = frenchService.decomposerPhrases(input);
             for (String sentence : sentences) {
                 String[] tokens = frenchService.decomposeMot(sentence);
@@ -98,7 +98,7 @@ public class BotController {
 
     @PostMapping(path = "/categorie")
     public String getCategorie(@RequestBody Message categorie) throws IOException {
-        DoccatModel model = englishService.trainCategorizerModel();
+        DoccatModel model = englishService.trainCategorizerModelEn();
         String[] token = englishService.decomposeMot(categorie.getMessage());
         return englishService.detectCategory(model, token);
     }
